@@ -398,7 +398,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/sports-car.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -472,6 +472,10 @@ h6 {
 
 #hero .icon-box:hover {
   border-color: #ffc451;
+}
+
+.HeroImg{
+  background: url("../img/sports-car.jpg");
 }
 
 @media (min-width: 1024px) {
