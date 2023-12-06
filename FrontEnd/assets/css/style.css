@@ -646,62 +646,32 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Register Customer
 --------------------------------------------------------------*/
-.services .icon-box {
-  text-align: center;
-  border: 1px solid #ebebeb;
-  padding: 80px 20px;
-  transition: all ease-in-out 0.3s;
-  background: #fff;
+
+
+.customer-form {
+  background-color: #a3a1a1;
 }
 
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: #ffc451;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transition: 0.3s;
+.form-label {
+  color: white;
+  font-weight: bold;
+  font-family: "4u-Araliya-Spot     ";
 }
 
-.services .icon-box .icon i {
-  color: #151515;
-  font-size: 28px;
-  transition: ease-in-out 0.3s;
+.Register-customer .register-img {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
 }
 
-.services .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
+.Register-customer .customer-form {
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgb(116, 227, 255);
 
-.services .icon-box h4 a {
-  color: #151515;
-  transition: ease-in-out 0.3s;
 }
-
-.services .icon-box h4 a:hover {
-  color: #ffc451;
-}
-
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.services .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  transform: translateY(-10px);
-}
-
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/

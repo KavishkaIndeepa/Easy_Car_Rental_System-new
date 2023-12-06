@@ -40,7 +40,7 @@
             <ul>
                 <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                 <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                <li><a class="nav-link scrollto" href="#register">Register-customer</a></li>
                 <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
                 <li><a class="nav-link scrollto" href="#team">Team</a></li>
                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -142,80 +142,117 @@
     </section><!-- End Features Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <section id="register" class="Register-customer">
         <div class="container" data-aos="fade-up">
 
-            <div class="section-title">
-                <h2>Services</h2>
-                <p>Check our Services</p>
+            <div class="section-header">
+                <h2>Register A Customer</h2>
+                <p>Register <span>Your Stay</span> With Us</p>
             </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                        <h4><a href="">Lorem Ipsum</a></h4>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                    </div>
+            <div class="row g-0">
+
+                <div class="col-lg-3 register-img sectionBorder"
+                     data-aos="zoom-out" data-aos-delay="200"
+                     style="background-image: url(assets/img/cus-reg.png)"></div>
+
+                <div class="col-lg-8 d-flex align-items-center register-form-bg sectionBorder" id="regCus">
+                    <form action="customer" class="customer-form" data-aos="fade-up" data-aos-delay="100"
+                          id="customerForm"
+                          method="post" role="form">
+                        <div class="row gy-3">
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="user_Id">User Id</label>
+                                <input class="form-control" id="user_Id" name="user_Id" placeholder="C00-001" readonly
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="firstName">First Name</label>
+                                <input class="form-control" id="firstName" name="firstName" placeholder="First Name"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="lastName">Last Name</label>
+                                <input class="form-control" id="lastName" name="lastName" placeholder="Last Name"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="contact_No">Contact Number</label>
+                                <input class="form-control" id="contact_No" name="contact_No"
+                                       placeholder="Contact Number"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="address">Address</label>
+                                <input class="form-control" id="address" name="address" placeholder="Address"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-control" id="email" name="email" placeholder="Email Address"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="nic">NIC</label>
+                                <input class="form-control" id="nic" name="nic" placeholder="National ID" type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="license_No">License Id</label>
+                                <input class="form-control" id="license_No" name="license_No"
+                                       placeholder="Driving License"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="nic_Img">Upload NIC</label>
+                                <input class="form-control" id="nic_Img" name="nic_Img" type="file">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="license_Img">Upload License </label>
+                                <input class="form-control" id="license_Img" name="license_Img" type="file">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="role_Type">Role Type</label>
+                                <select class="form-control" id="role_Type" name="role_Type" style="height: 3.2em">
+                                    <option value="REGISTERED_USER">REGISTERED_USER</option>
+                                </select>
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="user_Name">User Name</label>
+                                <input class="form-control" id="user_Name" name="user_Name" placeholder="User Name"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="password">Password</label>
+                                <input class="form-control" id="password" name="password" placeholder="Enter Password"
+                                       type="password">
+                                <span class="control-error"></span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-success mt-3" id="btnSaveCustomer" type="button">REGISTER
+                            </button>
+                        </div>
+                    </form>
                 </div>
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4><a href="">Sed ut perspiciatis</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4><a href="">Magni Dolores</a></h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-world"></i></div>
-                        <h4><a href="">Nemo Enim</a></h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-slideshow"></i></div>
-                        <h4><a href="">Dele cardo</a></h4>
-                        <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-arch"></i></div>
-                        <h4><a href="">Divera don</a></h4>
-                        <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-                    </div>
-                </div>
 
             </div>
 
         </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-        <div class="container" data-aos="zoom-in">
-
-            <div class="text-center">
-                <h3>Call To Action</h3>
-                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a class="cta-btn" href="#">Call To Action</a>
-            </div>
-
-        </div>
-    </section><!-- End Cta Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -564,7 +601,7 @@
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                             </div>
                             <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                <input type="email" class="form-control" name="email" id="email1" placeholder="Your Email" required>
                             </div>
                         </div>
                         <div class="form-group mt-3">
@@ -592,74 +629,14 @@
 
 <!-- ======= Footer ======= -->
 <footer id="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-info">
-                        <h3>Gp<span>.</span></h3>
-                        <p>
-                            A108 Adam Street <br>
-                            NY 535022, USA<br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
-                        </p>
-                        <div class="social-links mt-3">
-                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-4 col-md-6 footer-newsletter">
-                    <h4>Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
-                    </form>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
 
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>Kavishka</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
+            Designed by Kavishka Indeepa
         </div>
     </div>
 </footer><!-- End Footer -->
